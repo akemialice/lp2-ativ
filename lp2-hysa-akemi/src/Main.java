@@ -53,7 +53,7 @@ public class Main {
   }
   
  public static void mostrarMaterias(Iterator itr, Aluno aluno){
-	    for(var i = aluno.getTamanho(); i > 0; i--) {
+	    for(var i = aluno.getTam(); i > 0; i--) {
 	      var elemento = itr.next();
 	      if(itr.hasNext()){
 	        if(i == 2)
