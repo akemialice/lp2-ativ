@@ -31,6 +31,7 @@ public class Main {
       if(alunos.contains(aluno1))
         alunos.remove(aluno1);
       break;
+      
     }
     
     System.out.println("========== Removendo... ==========");
@@ -44,8 +45,6 @@ public class Main {
     System.out.print("Matérias do(a) aluno(a) 2 -> " + aluno2.toString() +": "); 
     Iterator iterator02 = aluno2.getMaterias().iterator();
     
-    mostrarMaterias(iterator01, aluno1);
-    mostrarMaterias(iterator02, aluno2);
-  }
-  
 
+  }
+}
