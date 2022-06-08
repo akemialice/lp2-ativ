@@ -23,12 +23,13 @@ public class Aluno {
 	    this.materias = new ArrayList<String>();
 	  }
 	  
-	  public void addMaterias(String materia) {
-		    materias.add(materia);
-		  }
 
 	  public void addMaterias(List<String> materiasNovas) {
 			  materias.addAll(materiasNovas); 
+		  }
+	
+	  public void addMaterias(String materia) {
+		    materias.add(materia);
 		  }
 
 	  public void removerElem() {
@@ -38,16 +39,18 @@ public class Aluno {
 	  public List<String> getMaterias() {
 		    return materias;
 		  }
+	
+	
+	  public int getTamMat() {
+		    return materias.size();
+		  }
+	
 	  public String toString() {
 		   return this.nome;
 		  }
 		  
 	  public String getNumeroMatricula() {
 		    return this.numeroMatricula;
-		  }
-
-	  public int getTamanho() {
-		    return materias.size();
 		  }
 	  
 	  public String getInstrutor() {
