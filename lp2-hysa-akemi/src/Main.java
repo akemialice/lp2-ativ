@@ -17,7 +17,7 @@ public class Main {
     Map<String, Aluno> mapa = new TreeMap<String, Aluno>();
     mapa.put("Akemi Alice", aluno1);
     mapa.put("Hysabelly Nunes", aluno2);
-    System.out.println("Ordem alfabética:");
+    System.out.println("Ordem alfabÃ©tica:");
     System.out.println(mapa);
 
     
@@ -39,28 +39,26 @@ public class Main {
    
     
     System.out.println("\n========== Utilizando Iterator ==========");
-    System.out.print("Matérias do(a) aluno(a) 1 -> " +aluno1.toString() +": "); 
+    System.out.print("MatÃ©rias do(a) aluno(a) 1 -> " +aluno1.toString() +": "); 
     Iterator iterator01 = aluno1.getMaterias().iterator();
     mostrarMaterias(iterator01, aluno1);
     
-    System.out.print("Matérias do(a) aluno(a) 2 -> " +aluno2.toString() +": "); 
+    System.out.print("MatÃ©rias do(a) aluno(a) 2 -> " +aluno2.toString() +": "); 
     Iterator iterator02 = aluno2.getMaterias().iterator();
     mostrarMaterias(iterator02, aluno2);
 
   }
-
   
-  public static void mostrarMaterias(Iterator itr, Aluno aluno){
+  public static void mostraMaterias(Iterator itr, Aluno aluno){
     for(var i = aluno.getTamanho(); i > 0; i--) {
       var elemento = itr.next();
       if(itr.hasNext()){
-        if(i == 2)
-          System.out.print(elemento + " e ");
-        else
-          System.out.print(elemento + ", ");
-      } else {
-        System.out.print(elemento + ".\n");
-      }
-    }
-  }
+        if(i == 2) System.out.print(elemento + " e ");
+        else  System.out.print(elemento + ", ");
+      } else { System.out.print(elemento + ".\n");  
+     }
+      System.out.println("========== Fim ==========");
+      
+   }
+ }
 }
