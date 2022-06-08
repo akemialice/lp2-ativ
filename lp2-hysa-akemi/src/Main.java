@@ -12,14 +12,12 @@ public class Main {
     aluno2.addMaterias("LP3");
     aluno2.addMaterias("TPO");
 
-    
     System.out.println("====================");
     Map<String, Aluno> mapa = new TreeMap<String, Aluno>();
     mapa.put("Akemi Alice", aluno1);
     mapa.put("Hysabelly Nunes", aluno2);
     System.out.println(mapa);
 
-    
     System.out.println("====================");
     Collection<Aluno> alunos = mapa.values(); 
     for (Aluno aluno : alunos) {
@@ -29,26 +27,25 @@ public class Main {
       System.out.println("Turno: " + aluno.getTurno());
     }
     
-    
     while(alunos.iterator().hasNext()) {
       if(alunos.contains(aluno1))
         alunos.remove(aluno1);
       break;
     }
+    
     System.out.println("========== Removendo... ==========");
     System.out.printf("Aluno(a) removido: "+ aluno1.toString());
    
     
     System.out.println("\n==================== ");
-    System.out.print("Matérias do(a) aluno(a) 1 -> " +aluno1.toString() +": "); 
+    System.out.print("Matérias do(a) aluno(a) 1 -> " + aluno1.toString() +": "); 
     Iterator iterator01 = aluno1.getMaterias().iterator();
-    mostrarMaterias(iterator01, aluno1);
     
-    System.out.print("Matérias do(a) aluno(a) 2 -> " +aluno2.toString() +": "); 
+    System.out.print("Matérias do(a) aluno(a) 2 -> " + aluno2.toString() +": "); 
     Iterator iterator02 = aluno2.getMaterias().iterator();
+    
+    mostrarMaterias(iterator01, aluno1);
     mostrarMaterias(iterator02, aluno2);
-
-
   }
   
 
