@@ -3,6 +3,7 @@ import java.util.*;
 Akemi Alice - SP304484X
 Hysabelly Nunes - SP3044742 
 */
+
 public class Aluno {
 	private String nome;
 	private String numeroMatricula;
@@ -15,15 +16,13 @@ public class Aluno {
 		if (nome == null) {
 			throw new NullPointerException("Nome não pode ser nulo");
 		}
-		
 	    this.nome = nome;
 	    this.turno = turno;
 	    this.numeroMatricula = numeroMatricula;
 	    this.instrutor = instrutor;
 	    this.materias = new ArrayList<String>();
-	  }
+	    }
 	  
-
 	  public void addMaterias(List<String> materiasNovas) {
 			  materias.addAll(materiasNovas); 
 		  }
@@ -32,14 +31,13 @@ public class Aluno {
 		    materias.add(materia);
 		  }
 
-	  public void removerMat() {
+	  public void removerMaterias() {
 			  materias.clear();
 		  }
 
 	  public List<String> getMaterias() {
 		    return materias;
 		  }
-	
 	
 	  public int getTamMat() {
 		    return materias.size();
@@ -63,6 +61,7 @@ public class Aluno {
 	  
 		public boolean estaMatriculado(Aluno aluno) {
 			return this.alunos.contains(aluno);
-		}
-	}
+		  }
 
+		  }
+	
