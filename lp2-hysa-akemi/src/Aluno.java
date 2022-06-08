@@ -1,20 +1,29 @@
 import java.util.*;
-
+/*
+Akemi Alice - SP304484X
+Hysabelly Nunes - SP3044742 
+*/
 public class Aluno {
 	private String nome;
 	private String numeroMatricula;
+	private String instrutor;
+	private String turno;
 	private List<String> materias; 
+	private Set<Aluno> alunos = new HashSet<>();
 	
-	  Aluno(String nome, String numeroMatricula) {
-		  if (nome == null) {
-				throw new NullPointerException("Nome n„o pode ser nulo");
-			}
+	  Aluno(String nome, String numeroMatricula, String instrutor, String turno) {
+		if (nome == null) {
+			throw new NullPointerException("Nome n√£o pode ser nulo");
+		}
+		
 	    this.nome = nome;
+	    this.turno = turno;
 	    this.numeroMatricula = numeroMatricula;
+	    this.instrutor = instrutor;
 	    this.materias = new ArrayList<String>();
 	  }
 	  
-	  public void adicionarMaterias(String materia) {
+	  public void addMaterias(String materia) {
 		    materias.add(materia);
 		  }
 
@@ -22,7 +31,7 @@ public class Aluno {
 			  materias.addAll(materiasNovas); 
 		  }
 
-	  public void removerTodosElementos() {
+	  public void removerElem() {
 			  materias.clear();
 		  }
 
@@ -40,5 +49,17 @@ public class Aluno {
 	  public int getTamanho() {
 		    return materias.size();
 		  }
+	  
+	  public String getInstrutor() {
+		    return this.instrutor;
+		  }
+
+	  public String getTurno() {
+		    return this.turno;
+		  }
+	  
+		public boolean estaMatriculado(Aluno aluno) {
+			return this.alunos.contains(aluno);
 		}
+	}
 
