@@ -32,7 +32,7 @@ public class Aluno {
 		    materias.add(materia);
 		  }
 
-	  public void removerElem() {
+	  public void removerMat() {
 			  materias.clear();
 		  }
 
