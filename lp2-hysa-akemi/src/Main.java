@@ -17,7 +17,6 @@ public class Main {
     Map<String, Aluno> mapa = new TreeMap<String, Aluno>();
     mapa.put("Akemi Alice", aluno1);
     mapa.put("Hysabelly Nunes", aluno2);
-    System.out.println("Ordem alfabética, map:");
     System.out.println(mapa);
 
     
