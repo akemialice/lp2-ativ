@@ -38,7 +38,7 @@ public class Main {
     System.out.printf("Aluno(a) removido: "+ aluno1.toString());
    
     
-    System.out.println("\n========== Utilizando Iterator ==========");
+    System.out.println("\n ========== Iterator ========== ");
     System.out.print("Matérias do(a) aluno(a) 1 -> " +aluno1.toString() +": "); 
     Iterator iterator01 = aluno1.getMaterias().iterator();
     mostrarMaterias(iterator01, aluno1);
@@ -49,7 +49,7 @@ public class Main {
 
   }
   
- public static void mostrarDisciplinas(Iterator itr, Aluno aluno){
+ public static void mostrarMaterias(Iterator itr, Aluno aluno){
 	    for(var i = aluno.getTamanho(); i > 0; i--) {
 	      var elemento = itr.next();
 	      if(itr.hasNext()){
@@ -59,9 +59,7 @@ public class Main {
 	          System.out.print(elemento + ", ");
 	      } else {
 	     System.out.print(elemento + ".\n");
-	    }
-	   }
-	  }
-  
-  System.out.println("\n========== Fim ==========");
-	}
+	      }
+	    	}	
+ 				}
+					}
