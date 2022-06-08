@@ -49,16 +49,19 @@ public class Main {
 
   }
   
-  public static void mostraMaterias(Iterator itr, Aluno aluno){
-    for(var i = aluno.getTamanho(); i > 0; i--) {
-      var elemento = itr.next();
-      if(itr.hasNext()){
-        if(i == 2) System.out.print(elemento + " e ");
-        else  System.out.print(elemento + ", ");
-      } else { System.out.print(elemento + ".\n");  
-     }
-      System.out.println("========== Fim ==========");
-      
-   }
- }
-}
+ public static void mostrarDisciplinas(Iterator itr, Aluno aluno){
+	    for(var i = aluno.getTamanho(); i > 0; i--) {
+	      var elemento = itr.next();
+	      if(itr.hasNext()){
+	        if(i == 2)
+	          System.out.print(elemento + " e ");
+	        else
+	          System.out.print(elemento + ", ");
+	      } else {
+	     System.out.print(elemento + ".\n");
+	    }
+	   }
+	  }
+  
+  System.out.println("\n========== Fim ==========");
+	}
