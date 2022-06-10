@@ -4,16 +4,17 @@ public class Main {
   public static void main(String args[]) {
 
     //declarando aluno
-    Aluno aluno1 = new Aluno("Akemi Alice", "12345", "Márcio Gomes","Medicina Veterinária", "Manhã", "Universidade Federal de São Paulo");
+    Aluno aluno1 = new Aluno("Akemi Alice", "12345", "Márcio","Medicina Veterinária", "1º semestre", "Manhã", "Universidade Federal de São Paulo");
     aluno1.addMaterias("Anatomia dos seres vivos"); 
     aluno1.addMaterias("Estudo dos seres vivos");
     
-    Aluno aluno2 = new Aluno("Hysabelly Nunes", "67890","Júlia Fernandez","Nutrição", "Noite", "Universidade Federal de São Paulo");
+    Aluno aluno2 = new Aluno("Hysabelly Nunes", "67890","Júlia","Nutrição", "2º semestre", "Noite", "Universidade Federal de São Paulo");
     aluno2.addMaterias("Planejamento Alimentar"); 
     aluno2.addMaterias("Técnica Dietética");
     aluno2.addMaterias("Educação Nutricional");
     
     //exibindo os alunos cadastrados
+    
     Map<String, Aluno> mapa = new TreeMap<String, Aluno>();
     mapa.put("Akemi Alice", aluno1);
     mapa.put("Hysabelly Nunes", aluno2);
@@ -32,6 +33,7 @@ public class Main {
       System.out.println("Número da matricula: " + aluno.getNumeroMatricula());
       System.out.println("Instrutor da matéria: " + aluno.getInstrutor());
       System.out.println("Cursando: " + aluno.getCurso());
+       System.out.println("Semestre atual: " + aluno.getSemestre());
       System.out.println("Turno: " + aluno.getTurno());
       System.out.println("Matérias inscritas:" + aluno.getMaterias());
       System.out.println("Instituição de ensino: " + aluno.getInstituicao());
