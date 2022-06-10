@@ -11,24 +11,27 @@ public class Aluno {
 	private String instrutor;
 	private String turno;
   private String curso;
+  private String semestre;
   private String instituicao;
 	private List<String> materias; 
 	private Set<Aluno> alunos = new HashSet<>();
 
   // exceção em java 
-  Aluno(String nome, String numeroMatricula, String instrutor, String curso, String turno, String instituicao) {
+  Aluno(String nome, String numeroMatricula, String instrutor, String curso, String semestre, String turno, String instituicao) {
 		if (nome == null) {
 			throw new NullPointerException("Nome não pode ser nulo");
 		}
 	    this.nome = nome;
 	    this.turno = turno;
     	this.curso = curso;
+      this.semestre = semestre;
       this.instituicao = instituicao;
 	    this.numeroMatricula = numeroMatricula;
 	    this.instrutor = instrutor;
 	    this.materias = new ArrayList<String>();
 	    }
 
+    // nome  
   	public String getNome() {
 		return nome;
 	}
@@ -84,6 +87,11 @@ public class Aluno {
 	  public String getCurso() {
 		    return this.curso;
 		  }
+  
+    // semestre do aluno
+	  public String getSemestre() {
+		    return this.semestre;
+		  }
 
     // saber se o aluno está matriculado 
 		public boolean estaMatriculado(Aluno aluno) {
@@ -95,3 +103,4 @@ public class Aluno {
 			return materias.get(index);
       }
 		}
+      
