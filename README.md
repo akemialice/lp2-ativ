@@ -2,4 +2,4 @@
 
 Linguagem de Programação
 
-https://replit.com/@hysabelly/trabalhoLP2
+https://replit.com/@hysabelly/fichaCadastro
