@@ -6,13 +6,13 @@ Hysabelly Nunes - SP3044742
 
 //Iniciamos declarando a classe aluno, e em seguida os 9 atributos com o modificador de acesso PRIVATE, eles poderao ser acessados apenas pela classe Aluno.
 public class Aluno {
-	private String nome;
-	private String numeroMatricula;
-	private String instrutor;
-	private String turno;
-  private String curso;
-  private String semestre;
-  private String instituicao;
+private String nome;
+private String numeroMatricula;
+private String instrutor;
+private String turno;
+private String curso;
+private String semestre;
+private String instituicao;
   //inicializando uma lista
 	private List<String> materias; 
   // HashSet implementa a interface Set, permitindo as operações básicas como adicionar, remover, conter e dimensionar
@@ -27,9 +27,9 @@ public class Aluno {
     //referencias
 	    this.nome = nome;
 	    this.turno = turno;
-    	this.curso = curso;
-      this.semestre = semestre;
-      this.instituicao = instituicao;
+    	    this.curso = curso;
+            this.semestre = semestre;
+            this.instituicao = instituicao;
 	    this.numeroMatricula = numeroMatricula;
 	    this.instrutor = instrutor;
     //Utilizamos o ArrayList que faz parte dos collections, a diferença entre um array embutido e um ArrayListem Java, é que o tamanho de um array não pode ser modificado (se você quiser adicionar ou remover elementos de/para um array, você tem que criar um novo). Enquanto os elementos podem ser adicionados e removidos de um ArrayListsempre que você quiser.
