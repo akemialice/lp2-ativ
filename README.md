@@ -2,6 +2,6 @@
 
 Linguagem de Programação
 
-- Classe aluno com ficha de cadastro
+- Classe aluno com as bibliotecas acima
 
 https://replit.com/@hysabelly/fichaCadastro
